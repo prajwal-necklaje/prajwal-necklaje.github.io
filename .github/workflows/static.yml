@@ -1,43 +1,218 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prajwal's Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header, .section {
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .header {
+            background: #f4f4f4;
+            border-radius: 8px;
+            border-left: 4px solid #4CAF50;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            padding-bottom: 10px;
+        }
+        .header p {
+            margin: 5px 0;
+        }
+        .section h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            color: #4CAF50;
+        }
+        .section {
+            background: #fafafa;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background: #f4f4f4;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background: #e7f4e4;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        ul ul li {
+            background: #d4e9d3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Prajwal N</h1>
+            <p><strong>DOB:</strong> 08/04/2001</p>
+            <p><strong>Email:</strong> prajwalmogra@gmail.com</p>
+            <p><strong>Phone:</strong> 9448937485</p>
+            <p><strong>Address:</strong> 1-135 Necklaje House, Mogra, Guthiagr, Sullia TQ, DK, Karnataka 574218</p>
+        </div>
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
+        <div class="section">
+            <h2>EDUCATIONAL QUALIFICATIONS</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course (Stream)/Examination</th>
+                        <th>Institution/University</th>
+                        <th>Year of Passing</th>
+                        <th>Performance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B.E (Information Science and Engineering)</td>
+                        <td>Srinivas Institute of Technology Mangalore (Visvesvaraya Technological University)</td>
+                        <td>2023</td>
+                        <td>7.25 CGPA</td>
+                    </tr>
+                    <tr>
+                        <td>PUC (PCMB)</td>
+                        <td>SSPU College Kukke Subhramanya</td>
+                        <td>2019</td>
+                        <td>68%</td>
+                    </tr>
+                    <tr>
+                        <td>SSLC</td>
+                        <td>SSPU College Kukke Subhramanya</td>
+                        <td>2017</td>
+                        <td>92.13%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+        <div class="section">
+            <h2>ADDITIONAL QUALIFICATIONS AND COURSES</h2>
+            <ul>
+                <li>Microsoft Azure (48 Hours)
+                    <ul>
+                        <li>Learned to utilize Microsoft Azure for cloud-based solutions deployment and management effectively.</li>
+                    </ul>
+                </li>
+                <li>Data Science using Python (48 Hours)
+                    <ul>
+                        <li>Gained skills in Python for data analysis, machine learning, and visualization purposes.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+        <div class="section">
+            <h2>INTERNSHIPS, LIVE PROJECTS</h2>
+            <p><strong>Django Full Stack Developer, AI Tech Solutions, Mangalore</strong></p>
+            <ul>
+                <li>Developed and maintained Django-based web applications.</li>
+                <li>Played a pivotal role in crafting robust and scalable web solutions.</li>
+                <li>Collaborated closely with the team on frontend development.</li>
+            </ul>
+        </div>
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+        <div class="section">
+            <h2>PROJECTS UNDERTAKEN</h2>
+            <ul>
+                <li>Apartment Management System (DBMS)
+                    <ul>
+                        <li>Developed an Apartment Management System utilizing a database, enhancing understanding of DBMS principles.</li>
+                    </ul>
+                </li>
+                <li>Super Market Management System (File Structure)
+                    <ul>
+                        <li>Designed a Supermarket Management System based on file structures, optimizing data organization and retrieval.</li>
+                    </ul>
+                </li>
+                <li>Quiz App (Android Application Development)
+                    <ul>
+                        <li>Created a Quiz App for Android, refining skills in Java and mobile application development.</li>
+                    </ul>
+                </li>
+                <li>Deep Fake Detection (AIML)
+                    <ul>
+                        <li>Explored Deep Fake Detection techniques using AI/ML, emphasizing the importance of media authenticity and won the first place in the college level exhibition.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
-jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload entire repository
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        <div class="section">
+            <h2>AWARDS & ACHIEVEMENTS</h2>
+            <ul>
+                <li>Participated in ISAP - 2020</li>
+                <li>District Level Chess Tournament – 2019</li>
+                <li>DST-INSPIRE Internship Science Camp – 2019</li>
+                <li>INSPIRE Award – 2014</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>CERTIFICATIONS</h2>
+            <ul>
+                <li>Microsoft Azure (Organization – Microsoft)</li>
+                <li>Data Science using Python (Organization – Intel)</li>
+                <li>C and C++ for Beginners (Organization – Udemy)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>SKILLS</h2>
+            <ul>
+                <li>Python Programming</li>
+                <li>C Programming</li>
+                <li>JavaScript, CSS, HTML</li>
+                <li>Full Stack Web Development</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>LANGUAGES KNOWN</h2>
+            <ul>
+                <li>English</li>
+                <li>Kannada</li>
+                <li>Tulu</li>
+                <li>Hindi</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
